@@ -53,15 +53,10 @@ html {
     line-height: 1.5;
     font-family: "Droid Serif", arial, sans-serif;
     color: #5C6366;
-    padding: 48px 24px 24px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-    max-width: 42em;
-    margin: 0 auto;
-}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -196,6 +191,41 @@ a:focus {
     color: #00A0E6;
 }
 
+/*
+    Components: Author
+*/
+
+.c-author {
+    display: flex;
+    align-items: center;
+}
+
+.c-author__image {
+    width: 56px;
+    border-radius: 100%;
+    margin-right: 16px;
+}
+
+.c-author__caption {
+    padding: 0;
+}
+
+.c-author__name, .c-author__meta {
+    margin-bottom: 0;
+}
+
+.c-author__name {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.c-author__meta {
+    font-family: "Inter UI", Helvetica, arial, sans-serif;
+    font-style: 14px;
+    line-height: 16px;
+    margin-top: 4px;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {}
@@ -203,9 +233,6 @@ a:focus {
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
-    html {
-        padding: 48px 48px 24px;
-    }
     h1 {
         font-size: 58px;
         line-height: 64px;
